@@ -1,53 +1,52 @@
  * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
   }
 
  header {
     display: flex;
-    justify-content: baseline;
-    align-content: center;
+    justify-content: space-between;
   }
   .lista {
     display: flex;
-    justify-content: space-between;
-    align-content: center;
-    padding: 15px;
-    margin: 0;
-    gap: 20px; 
+    position: relative;
+    justify-content: center;
+    flex-direction: row;
+    padding: 15px 20px;
+    gap: 8px; 
   }
+  .opcoes {
+    padding: 15px 20px;
+    width: auto;
+    font-weight: bolder;
+  }
+
   .opcoes:hover {
     display: flex;
     flex-wrap: nowrap;
     background-color: orangered;
     color: aliceblue;
     font-weight: bold;
+    
   }
-  .img {
-    display: flex;
-    justify-content: flex-start;
-    width: 150px;
+  .logo {
+    width: 12rem;
+    height: 4rem;
+    margin-left: 10px;
+    margin-top: 5px;
   }
-  .faster {
-    display: flex;
-    align-content: end;
-    align-self: center;
-    font-size: 25px;
-    font-style: bold;
-    color: orangered;
-  }
-  button {
-    display: flex;
-    justify-content: flex-end;
-    align-self: flex-end;
-    border: solid 1px orangered;
+  
+  .btn-encomendas {
+    margin-right: 15rem;
+    border: none;
     border-radius: 10px;
     color: white;
-    padding: 10px;
+    padding: 15px 20px;
     background-color: orangered;
     transition: background-color   0.2s ease, color 0.2s ease;
   }
-  button:hover {
+  .btn-encomendas:hover {
     background-color: aliceblue;
     color: orangered;
   }
@@ -67,5 +66,8 @@
     height: 500px;
     filter: brightness(0.40);
     color: white;
+    z-index: -1;
   }
+
+  
   
