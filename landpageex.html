@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>FASTER</title>
-    <link rel="stylesheet" href="pagestyle.css">
-  </head>
 
-  <body>
-    <header>
-      <img
-        class="logo"
-        src="logo.png"
-        alt="logo marca"
-      />
-      <nav class="lista">
-          <a class="opcoes">Home</a>
-          <a class="opcoes">Sobre</a>
-          <a class="opcoes">Serviço</a>
-          <a class="opcoes">Preço</a>
-          <a class="opcoes">Conteúdos</a>
-          <a class="opcoes">Contatos</a>
-      </nav>
-      <button class="btn-encomendas">Pegue as encomendas</button>
-    </header>
-    <main>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FASTER</title>
+  <link rel="stylesheet" href="pagestyle.css">
+</head>
+
+<body>
+  <header>
+    <img class="logo" src="logo.png" alt="logo marca" />
+    <nav class="lista">
+      <a class="opcoes">Home</a>
+      <a class="opcoes">Sobre</a>
+      <a class="opcoes">Serviço</a>
+      <a class="opcoes">Preço</a>
+      <a class="opcoes">Conteúdos</a>
+      <a class="opcoes">Contatos</a>
+    </nav>
+    <button class="btn-encomendas">Pegue as encomendas</button>
+  </header>
+  <main>
     <section class="image">
       <div class="content">
         <p>Seguro e Rápido</p>
         <h3>Serviços Logísticos</h3>
-        <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquise sobre produtos e mais">
+        <div class="search-service">
+          <input type="text" name="pesquisar" id="pesquisar" placeholder="Pesquise produtos e mais">
         <button class="btn-pesquisa">Pesquisar</button>
+        </div>
       </div>
     </section>
-    <section class="pedir-servicos">
+    <section class="order-services">
+      <div class="text-getquote">
         <h4>Pegue um serviço</h4>
         <h1>Solicite um serviço gratuito</h1>
-        <p>Economize tempo e dinheiro! Solicite um serviço gratuito e tenha acesso a profissionais experientes <br> que irão resolver suas tarefas com eficiência.</p>
-        <div class="numeros-servicos">
-          <h1>225</h1>
-          <p>Especialistas habilidosos</p>
-          <h1>1050</h1>
-          <p>Clientes Satisfeitos</p>
-          <h1>2500</h1>
-          <p>Projetos Completos</p>
-        </div>
-        <form action="/servicos" class="pedidos-de-servico">
-          <input type="text" id="nome">
-          <input type="email" id="email">
-          <select name="servico" id="servico">
-            <option value="selecionar-servico" selected>Selecione um serviço</option>
-          </select>
-          <button>Pegue o serviço</button>
-        </form>
+        <p>Economize tempo e dinheiro! Solicite um serviço gratuito e tenha acesso a profissionais experientes <br> que
+          irão resolver suas tarefas com eficiência.</p>
+      </div>
+      <div class="num-services">
+        <h1>225</h1>
+        <p>Especialistas habilidosos</p>
+        <h1>1050</h1>
+        <p>Clientes Satisfeitos</p>
+        <h1>2500</h1>
+        <p>Projetos Completos</p>
+      </div>
+      <form action="/servicos" class="orders-services">
+        <input type="text" id="nome" placeholder="Seu nome">
+        <input type="email" id="email" placeholder="Seu email">
+        <select name="servico" id="servico">
+          <option value="selecionar-servico" selected>Selecione um serviço</option>
+        </select>
+        <button>Pegue o serviço</button>
+      </form>
     </section>
-    </main>
-  </body>
+    <section class="plan-prices">
+      <div class="title-plan"> 
+          <h3>Preços de Planos</h3>
+          <h1>Pacotes com preços</h1>
+      </div>
+        <div class="plan-basic">
+
+        </div>
+        <div class="plan-premium">
+
+        </div>
+        <div class="plan-business">
+
+        </div>
+    </section>
+  </main>
+</body>
+<footer>
+  
+</footer>
 </html>
