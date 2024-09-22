@@ -1,73 +1,136 @@
- * {
-    margin: 0;
-    padding: 0;
-    font-family: sans-serif;
-  }
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
- header {
-    display: flex;
-    justify-content: space-between;
-  }
-  .lista {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    flex-direction: row;
-    padding: 15px 20px;
-    gap: 8px; 
-  }
-  .opcoes {
-    padding: 15px 20px;
-    width: auto;
-    font-weight: bolder;
-  }
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Rubik", sans-serif;
+}
 
-  .opcoes:hover {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: orangered;
-    color: aliceblue;
-    font-weight: bold;
-    
-  }
-  .logo {
-    width: 12rem;
-    height: 4rem;
-    margin-left: 10px;
-    margin-top: 5px;
-  }
-  
-  .btn-encomendas {
-    margin-right: 15rem;
-    border: none;
-    border-radius: 10px;
-    color: white;
-    padding: 15px 20px;
-    background-color: orangered;
-    transition: background-color   0.2s ease, color 0.2s ease;
-  }
-  .btn-encomendas:hover {
-    background-color: aliceblue;
-    color: orangered;
-  }
-  
-  
-  .image-log {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    top: 50%;
-    font-size: 200%;
-    background-image: url(https://img.ibxk.com.br/2013/5/materias/4426485393141937-o.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 500px;
-    filter: brightness(0.40);
-    color: white;
-    z-index: -1;
-  }
+header {
+	display: flex;
+	justify-content: space-between;
+}
+.lista {
+	display: flex;
+	position: relative;
+	justify-content: center;
+	flex-direction: row;
+	padding: 15px 20px;
+	gap: 8px;
+	cursor: default;
+}
+.opcoes {
+	padding: 15px 20px;
+	width: auto;
+	font-weight: bolder;
+}
 
-  
-  
+.opcoes:hover {
+	display: flex;
+	/* flex-wrap: nowrap; */
+	background-color: orangered;
+	color: aliceblue;
+	font-weight: bold;
+}
+.logo {
+	width: 14rem;
+	height: 4rem;
+	margin-left: 10px;
+	margin-top: 5px;
+}
+
+.btn-encomendas {
+	position: relative;
+	margin-right: 15rem;
+	border: none;
+	border-radius: 10px;
+	color: white;
+	padding: 10px 20px 10px 20px;
+	background-color: orangered;
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+.btn-encomendas:hover {
+	background-color: aliceblue;
+	color: orangered;
+}
+
+.image {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-image: url(https://img.ibxk.com.br/2013/5/materias/4426485393141937-o.jpg);
+	background-size: cover;
+	background-position: center;
+	height: 500px;
+	color: white;
+}
+
+.image:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6); /* Escurece a imagem de fundo */
+	z-index: 1;
+}
+
+.content {
+	font-size: 50px;
+	position: relative;
+	z-index: 2;
+}
+
+.content p {
+	margin-bottom: 20px;
+}
+
+.content h3 {
+	margin-bottom: 18px;
+}
+
+#pesquisar {
+	padding: 18px 150px;
+	box-sizing: border-box;
+	text-align: left;
+}
+
+#pesquisar::placeholder {
+	width: 100%;
+	font-size: medium;
+}
+
+.btn-pesquisa {
+	padding: 17px;
+	gap: none;
+	background-color: orangered;
+	color: white;
+	border: none;
+	font-size: medium;
+}
+
+.btn-pesquisa:hover {
+	background-color: azure;
+	color: orangered;
+}
+
+.pedir-servicos {
+	background-color: rgb(223, 221, 215);
+	margin: 8% 0;
+	margin-top: 25px;
+	padding: 55px 150px;
+}
+
+
+.numeros-servicos {
+	display: block;
+	
+}
+
+.pedidos-de-servico {
+	margin-right: 150px;
+}
