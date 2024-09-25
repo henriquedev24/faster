@@ -269,8 +269,8 @@ header {
 }
 
 .plans button {
-	padding: 10%;
-	font-size: 20px;
+	padding: 8%;
+	font-size: 18px;
 	font-weight: bolder;
 	background-color: #ff5a01;
 	border: none;
@@ -287,7 +287,7 @@ header {
 .plan-basic,
 .plan-premium,
 .plan-business {
-	padding: 3rem 5rem 10rem 5rem;
+	padding: 3rem 5rem 8rem 5rem;
 	background-color: #dfddd7;
 	width: 15%;
 }
@@ -303,12 +303,28 @@ footer h2 {
 }
 
 .links {
+	position: relative;
 	margin-left: 0;
 	padding: 10rem;
+	color: aliceblue;
 }
 
 .contacts {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
+}
+
+.contacts a {
+	text-decoration: none;
+	color: aliceblue;
+}
+
+.contacts a:hover {
+	text-decoration: underline;
+}
+
+.media img {
+	margin: 15px 10px;
+	gap: 18px;
 }
