@@ -247,13 +247,13 @@ header {
 }
 
 .plans h1 {
-	font-size: 50px;
+	font-size: 40px;
 	margin: 30px;
 }
 
 .plans h2 {
 	margin: 10px 0;
-	font-size: 35px;
+	font-size: 30px;
 	background-color: #050505;
 	color: white;
 	padding: 15px 50px;
@@ -289,13 +289,15 @@ header {
 .plan-business {
 	padding: 3rem 5rem 8rem 5rem;
 	background-color: #dfddd7;
-	width: 15%;
+	width: 12%;
 }
 
 
 footer {
 	background-color: darkblue;
 	margin-top: 45px;
+	display: flex;
+	justify-content: baseline;
 }
 
 footer h2 {
@@ -305,7 +307,7 @@ footer h2 {
 .links {
 	position: relative;
 	margin-left: 0;
-	padding: 10rem;
+	margin: 10rem;
 	color: aliceblue;
 }
 
@@ -327,4 +329,52 @@ footer h2 {
 .media img {
 	margin: 15px 10px;
 	gap: 18px;
+}
+
+.newsletter {
+	margin: 10rem 4rem;
+	color: aliceblue;
+	max-width: 100%;
+}
+
+.newsletter p {
+	margin-top: 8px;
+	float: left;
+}
+
+.newsletter div {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	max-width: 600px;
+	margin: 45px 0;
+}
+
+.newsletter input {
+	flex-grow: 1;
+	padding: 16px 20px;
+	box-sizing: border-box;
+	font-size: medium;
+	width: 100%;
+}
+
+.newsletter input:hover {
+	width: 55%;
+	font-size: medium;
+}
+
+.btn-enviar-email {
+	padding: 16px;
+	background-color: orangered;
+	color: white;
+	border: none;
+	font-size: medium;
+	cursor: pointer;
+	height: 53px;
+	margin-left: 0;
+}
+
+.btn-enviar-email:hover {
+	color: #050505;
+	background-color: aliceblue;
 }
